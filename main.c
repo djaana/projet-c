@@ -3,37 +3,9 @@
 #include <stdbool.h>
 #include <string.h>
 
-void flush_stdin() {
-    int c;
-    while((c = getchar()) != '\n' && c != EOF) {}
-}
-
-int ask_for_int(char* prompt) {
-    int result = 0;
-    int input = 0;
-
-    while (result != 1) {
-        printf("%s", prompt);
-        result = scanf("%d", &input);
-
-        if (result == EOF) return 0;
-
-        flush_stdin();
-    }
-
-    return input;
-}
-
-char* ask_for_string(char* prompt) {
-    static char buffer[256];
-
-    printf("%s", prompt);
-    fgets(buffer, sizeof(buffer), stdin);
-
-    buffer[strcspn(buffer, "\n")] = '\0';
-
-    return buffer;
-}
+#include "include/utils/flush_stdin.h"
+#include "include/utils/ask_for_int.h"
+#include "include/utils/ask_for_string.h"
 
 int main() {
     int menu = ask_for_int("1. Créer un SVG\n2. Modifier un SVG\n3. Supprimer un SVG\n4. Visualiser un SVG\n0. Quitter\n\n> ");
