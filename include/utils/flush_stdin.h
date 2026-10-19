@@ -1,6 +1,6 @@
-#include <stdio.h>
+#ifndef FLUSH_STDIN_H
+#define FLUSH_STDIN_H
 
-void flush_stdin() {
-    int c;
-    while((c = getchar()) != '\n' && c != EOF) {}
-}
+void flush_stdin();
+
+#endif

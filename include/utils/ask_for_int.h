@@ -1,15 +1,6 @@
-int ask_for_int(char* prompt) {
-    int result = 0;
-    int input = 0;
+#ifndef ASK_FOR_INT_H
+#define ASK_FOR_INT_H
 
-    while (result != 1) {
-        printf("%s", prompt);
-        result = scanf("%d", &input);
+int ask_for_int(char* prompt);
 
-        if (result == EOF) return 0;
-
-        flush_stdin();
-    }
-
-    return input;
-}
+#endif

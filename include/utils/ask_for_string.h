@@ -1,12 +1,6 @@
-#include <string.h>
+#ifndef ASK_FOR_STRING_H
+#define ASK_FOR_STRING_H
 
-char* ask_for_string(char* prompt) {
-    static char buffer[256];
+char* ask_for_string(char* prompt);
 
-    printf("%s", prompt);
-    fgets(buffer, sizeof(buffer), stdin);
-
-    buffer[strcspn(buffer, "\n")] = '\0';
-
-    return buffer;
-}
+#endif
