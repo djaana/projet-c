@@ -25,7 +25,8 @@ void create_m(const viewport_size_t size) {
       CLI_CREATE_PANEL,
       size.width,
       size.height,
-      CLI_CREATE_MENU);
+      CLI_CREATE_MENU
+    );
 
     const int menu = ask_for_int(prompt);
 

@@ -20,7 +20,8 @@ viewport_size_t create_viewport_c() {
 		"%s",
 		PROMPT_CREATE_VIEWPORT_SIZE_PANEL,
 		PROMPT_CREATE_VIEWPORT_SIZE,
-		PROMPT_CREATE_VIEWPORT_WIDTH);
+		PROMPT_CREATE_VIEWPORT_WIDTH
+	);
 
 	const int viewport_width = ask_for_int(prompt);
 	
@@ -33,7 +34,8 @@ viewport_size_t create_viewport_c() {
 		"%s",
 		PROMPT_CREATE_VIEWPORT_SIZE_PANEL,
 		viewport_width,
-		PROMPT_CREATE_VIEWPORT_HEIGHT);
+		PROMPT_CREATE_VIEWPORT_HEIGHT
+	);
 
 	const int viewport_height = ask_for_int(prompt);
 

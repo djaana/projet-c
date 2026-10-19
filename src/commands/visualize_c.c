@@ -25,11 +25,20 @@ void visualize_c() {
 	char cmd[1024];
 
 	#ifdef _WIN32
-		snprintf(cmd, sizeof(cmd), "cmd /c start \"\" \"%s\"", path);
+		snprintf(cmd, sizeof(cmd),
+		"cmd /c start \"\" \"%s\"",
+		path
+	);
 	#elif __APPLE__
-		snprintf(cmd, sizeof(cmd), "open \"%s\"", path);
+		snprintf(cmd, sizeof(cmd),
+		"open \"%s\"",
+		path
+	);
 	#else
-		snprintf(cmd, sizeof(cmd), "xdg-open \"%s\"", path);
+		snprintf(cmd, sizeof(cmd),
+		"xdg-open \"%s\"",
+		path
+	);
 	#endif
 
 	system(cmd);
