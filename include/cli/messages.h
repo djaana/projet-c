@@ -5,7 +5,7 @@
 #define CLI_MENU \
 	"\n" \
 	"  ╭──────────────────────────────────────╮\n" \
-	"  │            SVG  STUDIO               │\n" \
+	"  │               PROJET C               │\n" \
 	"  ╰──────────────────────────────────────╯\n" \
 	"\n" \
 	"    [1]  ✎   Create an SVG\n" \
@@ -20,7 +20,7 @@
 #define CLI_CREATE_PANEL \
 	"\n" \
 	"  ╭──────────────────────────────────────╮\n" \
-	"  │            CREATE  SVG               │\n" \
+	"  │             CREATE  SVG              │\n" \
 	"  ╰──────────────────────────────────────╯\n" \
 	"\n"
 #define CLI_CREATE_MENU \
@@ -37,7 +37,7 @@
 #define CLI_ADD_SHAPE_MENU \
 	"\n" \
 	"  ╭──────────────────────────────────────╮\n" \
-	"  │            CREATE  SVG               │\n" \
+	"  │             CREATE  SVG              │\n" \
 	"  ╰──────────────────────────────────────╯\n" \
 	"\n" \
 	"    [1]  ●   Circle\n" \
@@ -59,7 +59,7 @@
 #define PROMPT_CREATE_VIEWPORT_SIZE_PANEL \
 	"\n" \
 	"  ╭──────────────────────────────────────╮\n" \
-	"  │           VIEWPORT SIZE              │\n" \
+	"  │            VIEWPORT SIZE             │\n" \
 	"  ╰──────────────────────────────────────╯\n" \
 	"\n"
 #define PROMPT_CREATE_VIEWPORT_SIZE \
@@ -71,7 +71,7 @@
 #define PROMPT_SHAPE_EDIT_ID \
 	"\n" \
 	"  ╭──────────────────────────────────────╮\n" \
-	"  │             EDIT SHAPE               │\n" \
+	"  │              EDIT SHAPE              │\n" \
 	"  ╰──────────────────────────────────────╯\n" \
 	"\n" \
 	"   ─ ID of the shape to edit ?\n" \
@@ -81,7 +81,7 @@
 #define PROMPT_EDIT_PATH \
 	"\n" \
 	"  ╭──────────────────────────────────────╮\n" \
-	"  │              EDIT SVG                │\n" \
+	"  │               EDIT SVG               │\n" \
 	"  ╰──────────────────────────────────────╯\n" \
 	"\n" \
 	"   ─ Absolute SVG path to edit ?\n" \
@@ -91,7 +91,7 @@
 #define PROMPT_DELETE_PATH \
 	"\n" \
 	"  ╭──────────────────────────────────────╮\n" \
-	"  │             DELETE SVG               │\n" \
+	"  │              DELETE SVG              │\n" \
 	"  ╰──────────────────────────────────────╯\n" \
 	"\n" \
 	"   ─ Absolute SVG path to delete ?\n" \
@@ -101,7 +101,7 @@
 #define PROMPT_VISUALIZE_PATH \
 	"\n" \
 	"  ╭──────────────────────────────────────╮\n" \
-	"  │           VISUALIZE SVG              │\n" \
+	"  │            VISUALIZE SVG             │\n" \
 	"  ╰──────────────────────────────────────╯\n" \
 	"\n" \
 	"   ─ Absolute SVG path to visualize ?\n" \
