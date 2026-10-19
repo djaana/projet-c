@@ -6,7 +6,9 @@ void pause() {
 	printf("\nPress Enter to continue...");
 
 	int c;
-	while ((c = getchar()) != '\n' && c != EOF) { }
+	c = getchar();
+
+	while ((c != '\n') && (c != EOF)) {}
 	
 	if (c == EOF) getchar();
 };
