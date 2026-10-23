@@ -1,9 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "../../include/utils/ask_for_string.h"
-
 #include "../../include/utils/flush_stdin.h"
+#include "../../include/utils/ask_for_string.h"
 
 char* ask_for_string(char* prompt) {
 	static char buffer[256];

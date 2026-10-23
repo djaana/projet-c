@@ -1,13 +1,13 @@
+#include <stdio.h>
 #include <stdbool.h>
 
 #include "../../include/cli/main_m.h"
-
 #include "../../include/cli/create_m.h"
-
 #include "../../include/cli/messages.h"
 
 #include "../../include/utils/clear.h"
 #include "../../include/utils/pause.h"
+#include "../../include/utils/flush_stdin.h"
 #include "../../include/utils/ask_for_int.h"
 
 #include "../../include/commands/edit_c.h"
@@ -28,8 +28,25 @@ void main_m() {
     switch (menu) {
       // Create SVG
       case 1: {
-        const viewport_size_t size = create_viewport_c();
-        create_m(size);
+        const viewport_size_t viewport = create_viewport_c();
+
+        flush_stdin();
+
+        if (viewport.width <= 0) {
+          printf(ERROR_INVALID_VIEWPORT_WIDTH);
+          pause();
+
+          break;
+        }
+
+        if (viewport.height <= 0) {
+          printf(ERROR_INVALID_VIEWPORT_HEIGHT);
+          pause();
+
+          break;
+        }
+        
+        create_m(viewport);
 
         break;
       }

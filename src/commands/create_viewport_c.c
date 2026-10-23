@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-#include "../../include/commands/create_viewport_c.h"
-
 #include "../../include/cli/messages.h"
 
 #include "../../include/utils/clear.h"
 #include "../../include/utils/ask_for_int.h"
+
+#include "../../include/commands/create_viewport_c.h"
 
 #include "../../include/structures/viewport_size_t.h"
 
@@ -24,6 +24,13 @@ viewport_size_t create_viewport_c() {
 	);
 
 	const int viewport_width = ask_for_int(prompt);
+
+	viewport_size_t error = {
+		.width = 0,
+		.height = 0
+	};
+
+	if (viewport_width <= 0) return error;
 	
 	clear();
 	snprintf(prompt, sizeof(prompt),
@@ -38,8 +45,6 @@ viewport_size_t create_viewport_c() {
 	);
 
 	const int viewport_height = ask_for_int(prompt);
-
-	printf("%d", viewport_height);
 
 	const viewport_size_t result = {
 		.width = viewport_width,

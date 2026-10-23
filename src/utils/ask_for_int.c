@@ -1,12 +1,11 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-#include "../../include/utils/ask_for_int.h"
-
 #include "../../include/utils/clear.h"
 #include "../../include/utils/flush_stdin.h"
+#include "../../include/utils/ask_for_int.h"
 
-int ask_for_int(char* prompt) {
+const int ask_for_int(char* prompt) {
 	int input = 0;
 	int result = 0;
 

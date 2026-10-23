@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "../../include/commands/visualize_c.h"
-
 #include "../../include/cli/messages.h"
 
 #include "../../include/utils/file.h"
 #include "../../include/utils/clear.h"
 #include "../../include/utils/pause.h"
 #include "../../include/utils/ask_for_string.h"
+
+#include "../../include/commands/visualize_c.h"
 
 void visualize_c() {
 	clear();

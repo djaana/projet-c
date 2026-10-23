@@ -5,7 +5,6 @@
 #include <stdio.h>
 
 #include "../../include/utils/clear.h"
-
 #include "../../include/utils/flush_stdin.h"
 
 void clear() {

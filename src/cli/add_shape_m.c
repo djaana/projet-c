@@ -1,14 +1,15 @@
 #include <stdbool.h>
 
 #include "../../include/cli/add_shape_m.h"
-
 #include "../../include/cli/messages.h"
 
 #include "../../include/utils/clear.h"
 #include "../../include/utils/pause.h"
 #include "../../include/utils/ask_for_int.h"
 
-void add_shape_m() {
+#include "../../include/commands/add_circle_c.h"
+
+void add_shape_m(svg_t* svg) {
   bool running = true;
 
   while (running) {
@@ -18,7 +19,11 @@ void add_shape_m() {
 
     switch (menu) {
       // Circle
-      case 1: break;
+      case 1: {
+        add_circle_c(svg);
+
+        break;
+      }
       // Ellipse
       case 2: break;
       // Square

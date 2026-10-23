@@ -29,6 +29,7 @@
 	"    [2]  ✦   Edit a shape\n" \
 	"    [3]  ✗   Remove a shape\n" \
 	"    [4]  ↺   Reset SVG\n" \
+	"    [5]  ✓   Save SVG\n" \
 	"\n" \
 	"    [0]  ←   Back\n" \
 	"\n" \
@@ -55,6 +56,20 @@
 	"  ──────────────────────────────────────\n" \
 	"  ❯ "
 
+#define CLI_UNSAVED_MENU \
+	"\n" \
+	"  ╭──────────────────────────────────────╮\n" \
+	"  │           UNSAVED CHANGES            │\n" \
+	"  ╰──────────────────────────────────────╯\n" \
+	"\n" \
+	"    [1]  ✓   Save and leave\n" \
+	"    [2]  ✗   Discard and leave\n" \
+	"\n" \
+	"    [0]  ←   Back\n" \
+	"\n" \
+	"  ──────────────────────────────────────\n" \
+	"  ❯ "
+
 // Prompts messages
 #define PROMPT_CREATE_VIEWPORT_SIZE_PANEL \
 	"\n" \
@@ -68,6 +83,46 @@
 	"  ──────────────────────────────────────\n"
 #define PROMPT_CREATE_VIEWPORT_WIDTH  "  ❯ "
 #define PROMPT_CREATE_VIEWPORT_HEIGHT "  ❯ "
+#define PROMPT_CIRCLE_CX \
+	"\n" \
+	"  ╭──────────────────────────────────────╮\n" \
+	"  │              ADD CIRCLE              │\n" \
+	"  ╰──────────────────────────────────────╯\n" \
+	"\n" \
+	"   ─ Center X ?\n" \
+	"\n" \
+	"  ──────────────────────────────────────\n" \
+	"  ❯ "
+#define PROMPT_CIRCLE_CY \
+	"\n" \
+	"  ╭──────────────────────────────────────╮\n" \
+	"  │              ADD CIRCLE              │\n" \
+	"  ╰──────────────────────────────────────╯\n" \
+	"\n" \
+	"   ─ Center Y ?\n" \
+	"\n" \
+	"  ──────────────────────────────────────\n" \
+	"  ❯ "
+#define PROMPT_CIRCLE_R \
+	"\n" \
+	"  ╭──────────────────────────────────────╮\n" \
+	"  │              ADD CIRCLE              │\n" \
+	"  ╰──────────────────────────────────────╯\n" \
+	"\n" \
+	"   ─ Radius ?\n" \
+	"\n" \
+	"  ──────────────────────────────────────\n" \
+	"  ❯ "
+#define PROMPT_SAVE_PATH \
+	"\n" \
+	"  ╭──────────────────────────────────────╮\n" \
+	"  │               SAVE SVG               │\n" \
+	"  ╰──────────────────────────────────────╯\n" \
+	"\n" \
+	"   ─ Absolute SVG path to save to ?\n" \
+	"\n" \
+	"  ──────────────────────────────────────\n" \
+	"  ❯ "
 #define PROMPT_SHAPE_EDIT_ID \
 	"\n" \
 	"  ╭──────────────────────────────────────╮\n" \
@@ -116,6 +171,24 @@
 #define ERROR_FILE_DELETE \
 	"\n" \
 	"  ✗  Could not delete the file.\n"
+	#define ERROR_INVALID_VIEWPORT_WIDTH \
+	"\n" \
+	"  ✗  The viewport width must be greater than 0.\n"
+	#define ERROR_INVALID_VIEWPORT_HEIGHT \
+	"\n" \
+	"  ✗  The viewport height must be greater than 0.\n"
+#define ERROR_INVALID_RADIUS \
+	"\n" \
+	"  ✗  The radius must be greater than 0.\n"
+#define ERROR_SHAPE_ADD \
+	"\n" \
+	"  ✗  Could not add the shape.\n"
+#define ERROR_INVALID_EXTENSION \
+	"\n" \
+	"  ✗  The path must end with .svg.\n"
+#define ERROR_FILE_WRITE \
+	"\n" \
+	"  ✗  Could not write the file.\n"
 
 // Success messages
 #define SUCCESS_FILE_DELETED \
@@ -124,5 +197,11 @@
 #define SUCCESS_FILE_VISUALIZE \
 	"\n" \
 	"  ✓  File successfully launched in default app.\n"
+#define SUCCESS_SHAPE_ADDED \
+	"\n" \
+	"  ✓  Shape successfully added.\n"
+#define SUCCESS_FILE_SAVED \
+	"\n" \
+	"  ✓  File successfully saved.\n"
 
 #endif

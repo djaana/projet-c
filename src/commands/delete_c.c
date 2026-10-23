@@ -1,13 +1,13 @@
 #include <stdio.h>
 
-#include "../../include/commands/delete_c.h"
-
 #include "../../include/cli/messages.h"
 
 #include "../../include/utils/file.h"
 #include "../../include/utils/clear.h"
 #include "../../include/utils/pause.h"
 #include "../../include/utils/ask_for_string.h"
+
+#include "../../include/commands/delete_c.h"
 
 void delete_c() {
 	clear();
