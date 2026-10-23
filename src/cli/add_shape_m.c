@@ -9,6 +9,12 @@
 
 #include "../../include/commands/add_circle_c.h"
 
+/**
+ * Displays the shape selection menu and dispatches to the matching command
+ * until the user goes back.
+ *
+ * @param svg SVG to which shapes are added
+ */
 void add_shape_m(svg_t* svg) {
   bool running = true;
 

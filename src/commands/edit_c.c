@@ -10,6 +10,9 @@
 
 #include "../../include/commands/edit_c.h"
 
+/**
+ * Asks for the path of an SVG to edit and checks that it is a valid SVG file.
+ */
 void edit_c() {
 	clear();
 	

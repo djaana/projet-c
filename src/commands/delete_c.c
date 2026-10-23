@@ -9,6 +9,9 @@
 
 #include "../../include/commands/delete_c.h"
 
+/**
+ * Asks for the path of an SVG file and deletes it.
+ */
 void delete_c() {
 	clear();
 	

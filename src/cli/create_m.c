@@ -14,6 +14,12 @@
 
 #include "../../include/structures/viewport_size_t.h"
 
+/**
+ * Displays the SVG creation menu for a new SVG and handles its actions
+ * until the user saves or leaves.
+ *
+ * @param size viewport dimensions of the new SVG
+ */
 void create_m(const viewport_size_t size) {
   bool running = true;
 

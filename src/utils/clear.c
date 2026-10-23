@@ -7,6 +7,10 @@
 #include "../../include/utils/clear.h"
 #include "../../include/utils/flush_stdin.h"
 
+/**
+ * Clears the terminal screen and its scrollback buffer.
+ * On Windows, enables virtual terminal processing first.
+ */
 void clear() {
 	#ifdef _WIN32
 	const HANDLE h = GetStdHandle(STD_OUTPUT_HANDLE);

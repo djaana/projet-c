@@ -2,6 +2,9 @@
 
 #include "../../include/utils/pause.h"
 
+/**
+ * Displays a message and waits for the user to press Enter.
+ */
 void pause() {
 	printf("\nPress Enter to continue...");
 

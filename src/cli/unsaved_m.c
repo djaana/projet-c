@@ -8,6 +8,13 @@
 
 #include "../../include/commands/save_svg_c.h"
 
+/**
+ * Asks what to do with unsaved changes before leaving.
+ * Returns immediately if the SVG has no unsaved changes.
+ *
+ * @param svg SVG being left
+ * @return true if the user may leave (saved or discarded), false to stay
+ */
 bool unsaved_m(svg_t* svg) {
   if (!svg->modified) return true;
 

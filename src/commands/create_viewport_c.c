@@ -9,6 +9,12 @@
 
 #include "../../include/structures/viewport_size_t.h"
 
+/**
+ * Asks for the width then the height of a viewport.
+ * The height is not asked if the width is not strictly positive.
+ *
+ * @return the viewport dimensions, with a width of 0 if the width was invalid
+ */
 viewport_size_t create_viewport_c() {
 	clear();
 	

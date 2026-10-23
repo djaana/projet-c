@@ -13,6 +13,12 @@
 
 #include "../../include/structures/shape_t.h"
 
+/**
+ * Asks for the center and the radius of a circle and adds it to an SVG.
+ * Nothing is added if the radius is not strictly positive.
+ *
+ * @param svg SVG to which the circle is added
+ */
 void add_circle_c(svg_t* svg) {
 	clear();
 	const int cx = ask_for_int(PROMPT_CIRCLE_CX);

@@ -11,6 +11,13 @@
 
 #include "../../include/commands/save_svg_c.h"
 
+/**
+ * Asks for a path and saves an SVG to it.
+ * Clears the modified flag of the SVG on success.
+ *
+ * @param svg SVG to save
+ * @return true if the SVG was saved, false if the path is invalid or the write failed
+ */
 bool save_svg_c(svg_t* svg) {
 	clear();
 

@@ -17,6 +17,9 @@
 
 #include "../../include/structures/viewport_size_t.h"
 
+/**
+ * Displays the main menu and dispatches to the selected command until the user exits.
+ */
 void main_m() {
   bool running = true;
 

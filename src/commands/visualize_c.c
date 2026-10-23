@@ -10,6 +10,10 @@
 
 #include "../../include/commands/visualize_c.h"
 
+/**
+ * Asks for the path of an SVG file and opens it with the default application
+ * of the operating system.
+ */
 void visualize_c() {
 	clear();
 	
